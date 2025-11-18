@@ -3,13 +3,15 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function exercicio() {
-    await prisma.usuario.create({
+    const usuario = await prisma.usuario.update({
+        where: {
+            id: 2
+        },
         data: {
-            nome: "Usuario 2",
-            email: "usuario2@gmail.com",
-            senha: "123456"
+            ativo: false
         }
     })
+    console.log(usuario);
 }
 
 exercicio();

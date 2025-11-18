@@ -4,20 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx ./src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
     "@types/node": "^24.10.0",
+    "@types/terminal-kit": "^2.5.7",
     "prisma": "^6.19.0",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
-    "dotenv": "^16.4.7"
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "terminal-kit": "^3.1.2"
   }
 }

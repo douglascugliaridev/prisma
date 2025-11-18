@@ -2,8 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
+  provider = "prisma-client-js"
 }
 
 datasource db {
@@ -16,4 +15,7 @@ model Usuario {
   nome  String
   email String  @unique
   senha String
+  ativo Boolean @default(true)
+
+  @@map("usuarios")
 }

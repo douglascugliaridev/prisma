@@ -1,2 +1,3 @@
-const x: number = 10;
-console.log(x)
+import { menuPrincipal } from "./app/menu-principal.js";
+
+menuPrincipal()
